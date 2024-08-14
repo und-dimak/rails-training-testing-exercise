@@ -13,7 +13,7 @@ class Calculator
 
   def self.divide(a, b)
     raise ArgumentError, "Cannot divide by zero" if b == 0
-    a / b
+    a.to_f / b
   end
 
   def self.factorial(n)

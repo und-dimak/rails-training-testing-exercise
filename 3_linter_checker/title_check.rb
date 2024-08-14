@@ -54,6 +54,6 @@ class TitleCheck
   end
 
   def sentences
-    title.split(/(?<=[\--\.:!?])\s+/).map(&:strip)
+    title.split(/(?<=[\--\.;!?])\s+/).map(&:strip)
   end
 end
